@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://q.u/index.html</loc>
+    <lastmod>2019-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="http://q.u/phone/index.html"/>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 960px)" href="http://q.u/tablet/index.html"/>
+    <image:image>
+      <image:loc>http://q.u/images/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/dir.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/sborandfiltr.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/autopost.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/vzaim.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/comment.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/copy1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/auto.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/razdel.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/telega.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/r1.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/r2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/r3.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/r4.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/mac.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/advantage-1.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/advantage-2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/advantage-3.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/advantage-4.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://q.u/images/scr.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://q.u/pay.html</loc>
+    <lastmod>2019-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="http://q.u/phone/pay.html"/>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 960px)" href="http://q.u/tablet/pay.html"/>
+    <image:image>
+      <image:loc>http://q.u/images/logo2.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://q.u/p%D0%B0y.html</loc>
+    <lastmod>2019-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="http://q.u/phone/pаy.html"/>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 960px)" href="http://q.u/tablet/pаy.html"/>
+    <image:image>
+      <image:loc>http://q.u/images/logo2.png</image:loc>
+    </image:image>
+  </url>
+</urlset>

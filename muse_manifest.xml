@@ -1,0 +1,192 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="q.u" resolutions="1x" timestamp="1553172890585">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="pay.css" crc="3883295191" ref="pay"/>
+    <file name="index.css" crc="3972765134" ref="index"/>
+    <file name="p_y.css" crc="132076142" ref="pаy"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+    <file name="museutils.js" crc="340535759" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+    <file name="museconfig.js" crc="4286661555" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+    <file name="jquery.watch.js" crc="51536988" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+    <file name="webpro.js" crc="4059564322" ref="phone>index:tablet>index:index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="phone>index:tablet>index:index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="phone>index:tablet>index:index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="phone>index:tablet>index:index"/>
+    <file name="require.js" crc="7928878" ref="phone>index:phone>pay:phone>pаy:tablet>index:tablet>pay:tablet>pаy:index:pay:pаy"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.png" crc="494370212" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="mac307x186.png" crc="3837033437" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="dir.jpg" crc="4260236824" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="color-line.jpg" crc="3878793316" seo="true" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sborandfiltr.jpg" crc="4031972796" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="autopost.jpg" crc="3957435477" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="vzaim.jpg" crc="4201818429" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="comment.jpg" crc="208658944" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="copy1.jpg" crc="4014404572" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="auto.jpg" crc="222029234" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="razdel.jpg" crc="186317306" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="telega.jpg" crc="235933922" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="r1.png" crc="3890948521" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="r2.png" crc="3885633433" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="r3.png" crc="439578596" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="r4.png" crc="402698338" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="mac.png" crc="4095265801" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="advantage-1.png" crc="4216542215" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="advantage-2.png" crc="3799303517" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="advantage-3.png" crc="518700376" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="advantage-4.png" crc="139734404" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scr350x231.jpg" crc="375020476" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1.jpg" crc="88028648" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2122x108.jpg" crc="3879736092" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo2.png" crc="488995775" seo="true" ref="phone>pay:phone>pаy:tablet>pay:tablet>pаy:pay:pаy">
+      <caption webpage="pаy" alt=""/>
+      <caption webpage="pаy" alt=""/>
+      <caption webpage="pаy" alt=""/>
+      <caption webpage="pay" alt=""/>
+      <caption webpage="pay" alt=""/>
+      <caption webpage="pay" alt=""/>
+    </file>
+    <file name="scr742x490.jpg" crc="228105329" seo="true" ref="tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2.jpg" crc="244261239" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scr.jpg" crc="156778736" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="p_y.css" crc="500730750" ref="tablet>pаy"/>
+      <file name="pay.css" crc="3880952566" ref="tablet>pay"/>
+      <file name="index.css" crc="4013370247" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="513195276" seo="true" mt="1552914326499" redirect="true"/>
+    <file name="pay.html" crc="4263214812" seo="true" mt="1553172467482" redirect="true"/>
+    <file name="pаy.html" crc="219797747" seo="true" mt="1553172484803" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="pay.css" crc="4071693190" ref="phone>pay"/>
+      <file name="index.css" crc="3788676312" ref="phone>index"/>
+      <file name="p_y.css" crc="394526978" ref="phone>pаy"/>
+    </folder>
+    <file name="index.html" crc="4247945013" seo="true" mt="1552913935615" redirect="true"/>
+    <file name="pay.html" crc="3995364527" seo="true" mt="1553172512440" redirect="true"/>
+    <file name="pаy.html" crc="204778973" seo="true" mt="1553172573406" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="240301486" seo="true" mt="1553172739345" redirect="true"/>
+  <file name="pay.html" crc="204502555" seo="true" mt="1553172441801" redirect="true"/>
+  <file name="pаy.html" crc="93397171" seo="true" mt="1553172423312" redirect="true"/>
+</manifest>
