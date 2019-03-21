@@ -1,571 +1,511 @@
-<!DOCTYPE html>
-<html class="nojs html css_verticalspacer" lang="ru-RU">
- <head>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>WhatsApp рассылка</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="Content/Landing/images/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Content/Landing/images/fav.png">
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2018.1.0.386"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <script type="text/javascript">
-   // Redirect to phone/tablet as necessary
-(function(c,b,d){var a=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var d=a[b]+"MaxTouchPoints";if(d in navigator&&navigator[d])return!0}try{return document.createEvent("TouchEvent"),!0}catch(f){}return!1}(),f=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var d=b[c];d.charAt(0)==" ";)d=d.substring(1,d.length);if(d.indexOf(a)==
-0)return d.substring(a.length,d.length)}return null};if(f("inbrowserediting")!="true"){var h,f=f("devicelock");f=="phone"&&d?h=d:f=="tablet"&&b&&(h=b);if(f!=c&&!h)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&d?h=d:window.matchMedia("(max-device-width: 960px)").matches&&b&&a&&(h=b);else{var c=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),f=window.screen.systemXDPI||0,g=window.screen.systemYDPI||0,f=f>0&&g>0?Math.min(screen.width/f,screen.height/g):
-0;(c<=370||f!=0&&f<=3)&&d?h=d:c<=960&&b&&a&&(h=b)}if(h)document.location=h+(document.location.search||"")+(document.location.hash||""),document.write('<style type="text/css">body {visibility:hidden}</style>')}})("desktop","tablet/index.html","phone/index.html");
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-// Update the 'nojs'/'js' class on the html node
-document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+	<link href="Content/Landing/style.css" rel="stylesheet">
+	<link href="Content/Landing/responsive.css" rel="stylesheet">
 
-// Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "require.js", "index.css"], "outOfDate":[]};
-</script>
-  
-  <link media="only screen and (max-width: 370px)" rel="alternate" href="http://q.u/phone/index.html"/>
-  <link media="only screen and (max-width: 960px)" rel="alternate" href="http://q.u/tablet/index.html"/>
-  <title>Домашняя</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3972765134" id="pagesheet"/>
-    <!--HTML Widget code-->
-  <style type="text/css">#u1477.size_fluid_width_height iframe { position:absolute; left:0; top:0; }</style><style type="text/css">#u1493.size_fluid_width_height iframe { position:absolute; left:0; top:0; }</style>
- </head>
- <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="Content/Landing/func.js"></script>
+	<script src="Content/Landing/js/slide.js"></script>
+	<script type='text/javascript' src='Content/Landing/bootstrap.min.js'></script>
+	<style>
+		.round {
+			position: fixed;
+			right: 35px;
+			bottom: 35px;
+			border-radius: 100px; /* Радиус скругления */
+			opacity: 0.75;
+		}
+		.round:hover { opacity: 0.9;}
+		.round:active { opacity: 1; }
+	</style>
+</head>
+<body>
+	<div class="am hide">
+		<div class="wrapper">
+			<div class="logo" style="color: #000">
+				<a href="/"><img src="Content/Landing/images/logo2.png" style="width: 60%;"></a>
+			</div>
+			<ul id="menu-main" class="nav navbar-nav" style="margin-top: 15px;">
+				<li class="menu-item"><a class="menu-item float" href="#">Возможности</a></li>
+				<li class="menu-item"><a class="menu-item float" href="#">Как это работает</a></li>
+				<li class="menu-item"><a class="menu-item float" href="#">Эффективность</a></li>
+				<li class="menu-item"><a class="menu-item float" href="#">Отзывы</a></li>
+				<li class="menu-item"><a class="menu-item float" href="#">Вопросы</a></li>
+				<li class="menu-item"><a class="menu-item float" href="pay.html">Оплатить</a></li>
+			</ul>
+		</div>
+	</div>
 
-  <div class="clearfix borderbox" id="page"><!-- group -->
-   <div class="clearfix grpelem" id="ppu133"><!-- column -->
-    <div class="clearfix colelem" id="pu133"><!-- group -->
-     <div class="browser_width grpelem" id="u133-bw">
-      <div id="u133"><!-- simple frame --></div>
-     </div>
-     <div class="browser_width grpelem" id="u179-bw">
-      <div id="u179"><!-- simple frame --></div>
-     </div>
-     <div class="browser_width grpelem" id="u194-bw">
-      <div id="u194"><!-- group -->
-       <div class="clearfix" id="u194_align_to_page">
-        <div class="clip_frame grpelem" id="u156"><!-- image -->
-         <img class="block" id="u156_img" src="images/logo.png?crc=494370212" alt="" data-heightwidthratio="0.25396825396825395" data-image-width="315" data-image-height="80"/>
-        </div>
-        <div class="clearfix grpelem" id="u166-6"><!-- content -->
-         <p>Программа для рассылки сообщений</p>
-         <p>в WhatsApp</p>
-        </div>
-        <a class="nonblock nontext Button rounded-corners clearfix grpelem" id="buttonu188" href="https://spam-whatsapp.github.io/whatsapp.zip" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="clearfix grpelem" id="u189-4"><!-- content --><p>СКАЧАТЬ ДЕМОВЕРСИЮ</p></div></a>
-        <a class="nonblock nontext Button rounded-corners clearfix grpelem" id="buttonu200" href="pay.html" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="clearfix grpelem" id="u201-4"><!-- content --><p>ОПЛАТИТЬ</p></div></a>
-        <div class="clearfix grpelem" id="u1504"><!-- group -->
-         <div class="clip_frame grpelem" id="u207"><!-- image -->
-          <img class="block" id="u207_img" src="images/mac.png?crc=4095265801" alt="" data-heightwidthratio="0.6057494866529775" data-image-width="487" data-image-height="295"/>
-         </div>
-         <div class="size_fluid_width_height grpelem" id="u1477" data-pintopage="page_fluidx" data-sizePolicy="fluidWidthHeight"><!-- custom html -->
-          <div class="fluid_height_spacer"></div>
-          
-<iframe class="actAsDiv" style="width:100%;height:100%;" src="//www.youtube.com/embed/jlYCPaa9X5w?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
 
-         </div>
-        </div>
-        <div class="PamphletWidget clearfix allow_click_through grpelem" id="pamphletu3745" data-visibility="changed" style="visibility:hidden"><!-- none box -->
-         <div class="ThumbGroup clearfix colelem" data-col-pos="0" id="u3762"><!-- none box -->
-          <div class="popup_anchor allow_click_through grpelem" data-col-pos="0" id="u3764popup">
-           <div class="Thumb popup_element rounded-corners" data-col-pos="0" id="u3764"><!-- simple frame --></div>
-          </div>
-          <div class="popup_anchor allow_click_through grpelem" data-col-pos="1" id="u3765popup">
-           <div class="Thumb popup_element rounded-corners" data-col-pos="1" id="u3765"><!-- simple frame --></div>
-          </div>
-          <div class="popup_anchor allow_click_through grpelem" data-col-pos="2" id="u3763popup">
-           <div class="Thumb popup_element rounded-corners" data-col-pos="2" id="u3763"><!-- simple frame --></div>
-          </div>
-         </div>
-         <div class="popup_anchor allow_click_through colelem" data-col-pos="1" id="u3746popup">
-          <div class="ContainerGroup clearfix" data-col-pos="1" id="u3746"><!-- none box -->
-           <div class="Container rounded-corners clearfix grpelem" data-col-pos="0" id="u3747"><!-- group -->
-            <div class="clearfix grpelem" id="u3748-8"><!-- content -->
-             <p id="u3748-2">КОМУ НУЖНА ПРОГРАММА ?</p>
-             <p id="u3748-3">&nbsp;</p>
-             <p id="u3748-5">В первую очередь, программу оценят пользователи, ведущие собственный бизнес. При помощи этой программы можно организовать отличную рекламную кампанию для своего бизнеса и поднять уровень продаж своих товаров или услуг</p>
-             <p id="u3748-6">&nbsp;</p>
-            </div>
-           </div>
-           <div class="Container invi rounded-corners clearfix grpelem" data-col-pos="1" id="u3757"><!-- group -->
-            <div class="clearfix grpelem" id="u3758-8"><!-- content -->
-             <p id="u3758-2">ЧТО ТАКОЕ WhatsApp Spam?</p>
-             <p id="u3758-3">&nbsp;</p>
-             <p id="u3758-5">Отличный инструмент для продвижения и автоматизации действий в WhatsApp. Превосходя всех своих конкурентов, WhatsApp на сегодняшний день является самым мощным инструментом и на это конечно же есть причины. Программа смогла пробить все алгоритмы и ограничения, а так же показала превосходную конверсию.</p>
-             <p id="u3758-6">&nbsp;</p>
-            </div>
-           </div>
-           <div class="Container invi clearfix grpelem" data-col-pos="2" id="u3752"><!-- group -->
-            <div class="clearfix grpelem" id="u3935-8"><!-- content -->
-             <p id="u3935-2">ЧТО ТАКОЕ WhatsApp Spam?</p>
-             <p id="u3935-3">&nbsp;</p>
-             <p id="u3935-5">Отличный инструмент для продвижения и автоматизации действий в WhatsApp. Превосходя всех своих конкурентов, WhatsApp на сегодняшний день является самым мощным инструментом и на это конечно же есть причины. Программа смогла пробить все алгоритмы и ограничения, а так же показала превосходную конверсию.</p>
-             <p id="u3935-6">&nbsp;</p>
-            </div>
-           </div>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u513-4"><!-- content -->
-     <p id="u513-2">Телефонная База 1.900.000 контактов с Whatsapp по всей России, Казахстану, Беларусии при покупке программы в ПОДАРОК! Цена по АКЦИИ всего 1490/22$, ВМЕСТО 8000₽/120$! Акция ЗАКОНЧИТСЯ Сегодня в 00:00 по Москве! Спешите купить уникальный продукт! Аналагов НЕТ и НЕ БУДЕТ!</p>
-    </div>
-    <div class="clearfix colelem" id="u516-4"><!-- content -->
-     <p>Функции программы:</p>
-    </div>
-    <div class="clearfix colelem" id="pu522"><!-- group -->
-     <div class="clip_frame grpelem" id="u522"><!-- image -->
-      <img class="block" id="u522_img" src="images/dir.jpg?crc=4260236824" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u519-4"><!-- content -->
-      <p>Рассылка сообщений</p>
-     </div>
-     <div class="clearfix grpelem" id="u710"><!-- group -->
-      <div class="clip_frame grpelem" id="u679"><!-- image -->
-       <img class="block" id="u679_img" src="images/sborandfiltr.jpg?crc=4031972796" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-      </div>
-      <div class="clearfix grpelem" id="u673-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Чеккер контактов</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u722"><!-- group -->
-      <div class="clip_frame grpelem" id="u697"><!-- image -->
-       <img class="block" id="u697_img" src="images/autopost.jpg?crc=3957435477" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-      </div>
-      <div class="clearfix grpelem" id="u676-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Мультимедиа</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu716"><!-- group -->
-     <div class="clearfix grpelem" id="u716"><!-- group -->
-      <div class="clearfix grpelem" id="u545-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Автоматическая отправка сообщений по указанным контактам. Так же есть возможность прикрепить изображение</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u670-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u713"><!-- group -->
-      <div class="clearfix grpelem" id="u658-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Проверка факта регистрации номера телефона в WhatsApp</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u664-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u719"><!-- group -->
-      <div class="clearfix grpelem" id="u661-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Возможность прикрепить изображение к рассылаемым сообщениям</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u667-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu797"><!-- group -->
-     <div class="clip_frame grpelem" id="u797"><!-- image -->
-      <img class="block" id="u797_img" src="images/vzaim.jpg?crc=4201818429" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u725-4"><!-- content -->
-      <p>&nbsp;Автоматическая регистрация</p>
-     </div>
-     <div class="clip_frame grpelem" id="u807"><!-- image -->
-      <img class="block" id="u807_img" src="images/comment.jpg?crc=208658944" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u728-4"><!-- content -->
-      <p>Автоответчик</p>
-     </div>
-     <div class="clip_frame grpelem" id="u817"><!-- image -->
-      <img class="block" id="u817_img" src="images/copy1.jpg?crc=4014404572" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u731-4"><!-- content -->
-      <p>&nbsp;Высокая скорость</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu734"><!-- group -->
-     <div class="clearfix grpelem" id="u734"><!-- group -->
-      <div class="clearfix grpelem" id="u736-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Вам не нужно регистрировать аккаунты вручную, за вас это сделает програма автоматически в неограниченных количествах</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u735-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u743"><!-- group -->
-      <div class="clearfix grpelem" id="u744-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Вы можете настроить автоответчик прямо в WhatsApp Spam. Вам больше не нужно авторизовываться с сотни аккаунтов, чтобы ответить на сообщение</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u745-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u752"><!-- group -->
-      <div class="clearfix grpelem" id="u753-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Регистрация нового аккаунта занимает считаные секунды, аккаунт рассылает до 50-и сообщений в течении десяти секунд</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u754-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu827"><!-- group -->
-     <div class="clip_frame grpelem" id="u827"><!-- image -->
-      <img class="block" id="u827_img" src="images/auto.jpg?crc=222029234" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u788-4"><!-- content -->
-      <p>Статистика использования</p>
-     </div>
-     <div class="clip_frame grpelem" id="u847"><!-- image -->
-      <img class="block" id="u847_img" src="images/razdel.jpg?crc=186317306" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u791-4"><!-- content -->
-      <p>Бесплатные прокси</p>
-     </div>
-     <div class="clip_frame grpelem" id="u857"><!-- image -->
-      <img class="block" id="u857_img" src="images/telega.jpg?crc=235933922" alt="" data-heightwidthratio="1" data-image-width="38" data-image-height="38"/>
-     </div>
-     <div class="clearfix grpelem" id="u794-4"><!-- content -->
-      <p>Бесплатные обновления</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu779"><!-- group -->
-     <div class="clearfix grpelem" id="u779"><!-- group -->
-      <div class="clearfix grpelem" id="u781-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Програма автоматически собирает статистику и показывает в режиме реального времени - сколько сообщений отправлено, сколько аккаунтов заблокировано</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u780-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u770"><!-- group -->
-      <div class="clearfix grpelem" id="u771-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Вам не нужно покупать прокси, WhatsApp Spam автоматически запрашивает публичные сервера и проверяет на возможность использования в WhatsApp</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u772-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u761"><!-- group -->
-      <div class="clearfix grpelem" id="u762-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Купив програму один раз, вы на всю жизнь имеете доступ к автоматическим обновлениям</p>
-      </div>
-      <div class="rounded-corners clearfix grpelem" id="u763-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-       <p>Уже доступно</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u1414-4"><!-- content -->
-     <p>Купленная програма не имеет ограничений</p>
-    </div>
-    <div class="clearfix colelem" id="u1420-7"><!-- content -->
-     <p>&nbsp;</p>
-     <p>ВАЖНО!</p>
-     <p>Купленная програма не имеет ограничений! Оплатить программу Вы можете любой банковской картой, yandex кошельком или мобильным телефоном! После оплаты, Вы получите ссылку на скачивание программы для Whatsapp рассылки, базу на 1.900.000 номеров с Whatsapp по всей России, Казахстану, Беларусии и лицензионный ключ от программы, а так же API ключ от сервиса активации номеров для рассылки! Контакты ПЕРСОНАЛЬНОГО МЕНЕДЖЕРА! Дополнительных ВЛОЖЕНИЙ НЕТ! Все Обновления Абсолютно БЕСПЛАТНЫЕ!</p>
-    </div>
-    <div class="browser_width colelem" id="u2368-bw">
-     <div id="u2368"><!-- group -->
-      <div class="clearfix" id="u2368_align_to_page">
-       <div class="clearfix grpelem" id="pu1423-4"><!-- column -->
-        <div class="clearfix colelem" id="u1423-4"><!-- content -->
-         <p>Как это работает?</p>
-        </div>
-        <div class="clearfix colelem" id="pu2386"><!-- group -->
-         <div class="clearfix grpelem" id="u2386"><!-- column -->
-          <div class="clearfix colelem" id="pu2325"><!-- group -->
-           <div class="clip_frame grpelem" id="u2325"><!-- image -->
-            <img class="block" id="u2325_img" src="images/r1.png?crc=3890948521" alt="" data-heightwidthratio="1" data-image-width="64" data-image-height="64"/>
-           </div>
-           <div class="clearfix grpelem" id="u1426-4"><!-- content -->
-            <p>Этап #1</p>
-           </div>
-          </div>
-          <div class="clearfix colelem" id="u1429-4"><!-- content -->
-           <p>Приобретаете ключ активации на этом сайте. Скачиваете WhatsApp Spam, устанавливаете, указываете купленный ключ активации</p>
-          </div>
-         </div>
-         <div class="clearfix grpelem" id="u2383"><!-- column -->
-          <div class="clearfix colelem" id="pu2335"><!-- group -->
-           <div class="clip_frame grpelem" id="u2335"><!-- image -->
-            <img class="block" id="u2335_img" src="images/r2.png?crc=3885633433" alt="" data-heightwidthratio="1" data-image-width="64" data-image-height="64"/>
-           </div>
-           <div class="clearfix grpelem" id="u1444-4"><!-- content -->
-            <p>Этап #2</p>
-           </div>
-          </div>
-          <div class="clearfix colelem" id="u1432-4"><!-- content -->
-           <p>Добавляете номера телефонов из своей базы и отсеиваете те, на которых не зарегистрирован WhatsApp</p>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div class="clearfix grpelem" id="u2380"><!-- column -->
-        <div class="clearfix colelem" id="pu2345"><!-- group -->
-         <div class="clip_frame grpelem" id="u2345"><!-- image -->
-          <img class="block" id="u2345_img" src="images/r3.png?crc=439578596" alt="" data-heightwidthratio="1" data-image-width="64" data-image-height="64"/>
-         </div>
-         <div class="clearfix grpelem" id="u1447-4"><!-- content -->
-          <p>Этап #3</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u1435-4"><!-- content -->
-         <p>Указываете контакты в WhatsApp Spam, вводите сообщение, которое будет рассылаться</p>
-        </div>
-       </div>
-       <div class="clearfix grpelem" id="u2377"><!-- column -->
-        <div class="clearfix colelem" id="pu2355"><!-- group -->
-         <div class="clip_frame grpelem" id="u2355"><!-- image -->
-          <img class="block" id="u2355_img" src="images/r4.png?crc=402698338" alt="" data-heightwidthratio="1" data-image-width="64" data-image-height="64"/>
-         </div>
-         <div class="clearfix grpelem" id="u1441-4"><!-- content -->
-          <p>Результат</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u1438-4"><!-- content -->
-         <p>Нажимаете кнопку &quot;Запустить&quot; и следите за ростом продаж</p>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="ppu1450-4"><!-- group -->
-     <div class="clearfix grpelem" id="pu1450-4"><!-- column -->
-      <div class="clearfix colelem" id="u1450-4"><!-- content -->
-       <p>Что говорят пользователи:</p>
-      </div>
-      <div class="PamphletWidget clearfix allow_click_through colelem" id="pamphletu2389" data-visibility="changed" style="visibility:hidden"><!-- none box -->
-       <div class="popup_anchor allow_click_through grpelem" data-col-pos="0" id="u2396popup">
-        <div class="ContainerGroup clearfix" data-col-pos="0" id="u2396"><!-- none box -->
-         <div class="Container invi rounded-corners clearfix grpelem" data-col-pos="0" id="u2402"><!-- group -->
-          <div class="clearfix grpelem" id="u2403-9"><!-- content -->
-           <p id="u2403-2">Лиля Юсупова</p>
-           <p id="u2403-4">SMM-специалист</p>
-           <p id="u2403-5">&nbsp;</p>
-           <p id="u2403-7">«Успела получить ключ активации за отзыв. Лично моё мнение, програма супер. Даже инстаграм не показал такой эффективности, а с ним я работаю уже несколько лет. В общем - огонь »</p>
-          </div>
-         </div>
-         <div class="Container invi rounded-corners clearfix grpelem" data-col-pos="1" id="u2397"><!-- group -->
-          <div class="clearfix grpelem" id="u2398-15"><!-- content -->
-           <p id="u2398-2">Виктор Морозов</p>
-           <p id="u2398-4">Арбитражник</p>
-           <p id="u2398-5">&nbsp;</p>
-           <p id="u2398-7">«Занимаюсь арбитражем трафика уже долгое время. И я скажу</p>
-           <p id="u2398-9">&nbsp;вам, что при помощи WhatsApp Spam можно делать огромные</p>
-           <p id="u2398-11">&nbsp;продажи за гроши. Програма окупила себя за пол часа. Очень</p>
-           <p id="u2398-13">&nbsp;жаль, что автор не послушал меня и начал публичные продажи»</p>
-          </div>
-         </div>
-         <div class="Container invi rounded-corners clearfix grpelem" data-col-pos="2" id="u2407"><!-- group -->
-          <div class="clearfix grpelem" id="u2408-16"><!-- content -->
-           <p id="u2408-3"><span id="u2408">Владимир Авраменко</span><span id="u2408-2"></span></p>
-           <p id="u2408-5">Предприниматель</p>
-           <p id="u2408-6">&nbsp;</p>
-           <p id="u2408-8">«Пользуюсь программой около двух месяцев, за это время я</p>
-           <p id="u2408-10">&nbsp;понял, что WhatsApp - отличная платформа для бизнеса. На</p>
-           <p id="u2408-12">&nbsp;данный момент я получаю из WhatsApp более 70% лидов (такси</p>
-           <p id="u2408-14">&nbsp;по г. Москва). Всем рекомендую »</p>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div class="ThumbGroup clearfix grpelem" data-col-pos="1" id="u2390"><!-- none box -->
-        <div class="popup_anchor allow_click_through grpelem" data-col-pos="0" id="u2392popup">
-         <div class="Thumb popup_element rounded-corners" data-col-pos="0" id="u2392"><!-- simple frame --></div>
-        </div>
-        <div class="popup_anchor allow_click_through grpelem" data-col-pos="1" id="u2393popup">
-         <div class="Thumb popup_element rounded-corners" data-col-pos="1" id="u2393"><!-- simple frame --></div>
-        </div>
-        <div class="popup_anchor allow_click_through grpelem" data-col-pos="2" id="u2391popup">
-         <div class="Thumb popup_element rounded-corners" data-col-pos="2" id="u2391"><!-- simple frame --></div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u1501"><!-- group -->
-      <div class="clip_frame grpelem" id="u1453"><!-- image -->
-       <img class="block" id="u1453_img" src="images/mac.png?crc=4095265801" alt="" data-heightwidthratio="0.6057494866529775" data-image-width="487" data-image-height="295"/>
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u1493" data-pintopage="page_fluidx" data-sizePolicy="fluidWidthHeight"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<iframe class="actAsDiv" style="width:100%;height:100%;" src="//www.youtube.com/embed/_IQMrvzdGzU?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
 
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu2488"><!-- group -->
-     <div class="clearfix grpelem" id="u2488"><!-- column -->
-      <div class="clearfix colelem" id="u1507-4"><!-- content -->
-       <p>Отправляйте сообщения правильным путем</p>
-      </div>
-      <div class="clearfix colelem" id="u1510-8"><!-- content -->
-       <p>Массовая рассылка сообщений обеспечивает отличный трафик. В WhatsApp очень высокий процент открытия сообщений, поэтому вся ваша целевая аудитория увидит ваше предложение.</p>
-       <p>&nbsp;</p>
-       <p>Мы предлагаем настолько мощную рассылку сообщений, которую не предлагал еще никто. Успейте собрать все сливки вместе с нами.</p>
-       <p>&nbsp;</p>
-      </div>
-     </div>
-     <div class="clip_frame grpelem" id="u1513"><!-- image -->
-      <img class="block" id="u1513_img" src="images/advantage-1.png?crc=4216542215" alt="" data-heightwidthratio="0.6089238845144357" data-image-width="381" data-image-height="232"/>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu1529"><!-- group -->
-     <div class="clip_frame grpelem" id="u1529"><!-- image -->
-      <img class="block" id="u1529_img" src="images/advantage-2.png?crc=3799303517" alt="" data-heightwidthratio="0.6089238845144357" data-image-width="381" data-image-height="232"/>
-     </div>
-     <div class="clearfix grpelem" id="u2494"><!-- column -->
-      <div class="clearfix colelem" id="u1523-4"><!-- content -->
-       <p>Рекламируетесь по целевой аудитории</p>
-      </div>
-      <div class="clearfix colelem" id="u1526-7"><!-- content -->
-       <p>В WhatsApp огромная аудитория, практически каждый телефон установил себе приложение WhatsApp. Благодаря нашей програме вы можете сделать таргетированную рассылку по своей базе телефонов.</p>
-       <p>&nbsp;</p>
-       <p>И не важно, будет это 100 сообщений или 10 000. Наша програма справится с любыми обьемами.</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="ppu1539-4"><!-- group -->
-     <div class="clearfix grpelem" id="pu1539-4"><!-- column -->
-      <div class="clearfix colelem" id="u1539-4"><!-- content -->
-       <p>Автоматизируйте вашу рассылку</p>
-      </div>
-      <div class="clearfix colelem" id="u1542-8"><!-- content -->
-       <p>Вам не нужно регистрировать аккаунты вручную. Мы сделаем это за вас.</p>
-       <p>&nbsp;</p>
-       <p>Подключите любой доступный сервис sms-активации и програма готова рассылать тонны сообщений.</p>
-       <p>&nbsp;</p>
-      </div>
-     </div>
-     <div class="clip_frame grpelem" id="u1545"><!-- image -->
-      <img class="block" id="u1545_img" src="images/advantage-3.png?crc=518700376" alt="" data-heightwidthratio="0.6089238845144357" data-image-width="381" data-image-height="232"/>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu1797"><!-- group -->
-     <div class="clip_frame grpelem" id="u1797"><!-- image -->
-      <img class="block" id="u1797_img" src="images/advantage-4.png?crc=139734404" alt="" data-heightwidthratio="0.6089238845144357" data-image-width="381" data-image-height="232"/>
-     </div>
-     <div class="clearfix grpelem" id="pu1791-4"><!-- column -->
-      <div class="clearfix colelem" id="u1791-4"><!-- content -->
-       <p>Самый эффективный трафик</p>
-      </div>
-      <div class="clearfix colelem" id="u1794-10"><!-- content -->
-       <p>Себестоимость пятидесяти сообщений всего в 1 рубль.</p>
-       <p>&nbsp;</p>
-       <p>10 000 отправленных сообщений обойдутся вам всего в 200 рублей.</p>
-       <p>&nbsp;</p>
-       <p>Понимаете насколько это дешевый и эффективный трафик?</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u1917-4"><!-- content -->
-     <p>Скриншот програмы (версия 1.2)</p>
-    </div>
-    <div class="clip_frame colelem" id="u1930"><!-- image -->
-     <img class="block" id="u1930_img" src="images/scr.jpg?crc=156778736" alt="" data-heightwidthratio="0.6592920353982301" data-image-width="1130" data-image-height="745"/>
-    </div>
-    <div class="clearfix colelem" id="u1940-4"><!-- content -->
-     <p>Новое в версии 1.3</p>
-    </div>
-    <div class="clearfix colelem" id="pu1943"><!-- group -->
-     <div class="clip_frame grpelem" id="u1943"><!-- image -->
-      <img class="block" id="u1943_img" src="images/1.jpg?crc=88028648" alt="" data-heightwidthratio="0.6108247422680413" data-image-width="388" data-image-height="237"/>
-     </div>
-     <div class="clearfix grpelem" id="pu1953-4"><!-- column -->
-      <div class="clearfix colelem" id="u1953-4"><!-- content -->
-       <p>Чеккер телефонных номеров</p>
-      </div>
-      <div class="clearfix colelem" id="u1956-7"><!-- content -->
-       <p>Вы можете любой бесплатной програмой собрать в нужной группе ВК, ok.ru (или любой другой социальной сети) телефонные номера.</p>
-       <p>&nbsp;</p>
-       <p>И после этого, если они зарегистрированы в WhatsApp, то произвести рассылку личных сообщений.</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="ppu1962-4"><!-- group -->
-     <div class="clearfix grpelem" id="pu1962-4"><!-- column -->
-      <div class="clearfix colelem" id="u1962-4"><!-- content -->
-       <p>7 сервисов СМС-активаций</p>
-      </div>
-      <div class="clearfix colelem" id="u1959-8"><!-- content -->
-       <p>Мы исключили такую проблему, как нехватка сим-карт в сервисах смс-активаций.</p>
-       <p>&nbsp;</p>
-       <p>У вас теперь есть 7 сервисов, при помощи которых происходит автоматическая регистрация аккаунтов.</p>
-       <p>&nbsp;</p>
-      </div>
-     </div>
-     <div class="clip_frame grpelem" id="u1965"><!-- image -->
-      <img class="block" id="u1965_img" src="images/2.jpg?crc=244261239" alt="" data-heightwidthratio="0.8888888888888888" data-image-width="333" data-image-height="296"/>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u1975-4"><!-- content -->
-     <p>Если остались вопросы</p>
-    </div>
-    <div class="clearfix colelem" id="u1978-31"><!-- content -->
-     <p>Покупая ключ активации вы получаете доступ к програме навсегда.</p>
-     <p>&nbsp;</p>
-     <p>Все последующие обновления абсолютно бесплатны. Вам нужно лишь один раз нажать &quot;Проверить обновления&quot;.</p>
-     <p>&nbsp;</p>
-     <p>Поддержка прокси будет в следующем обновлении. На данный момент вы без проблем можете использовать публичные (они так же загружаются в програму одним нажатием кнопки).</p>
-     <p>&nbsp;</p>
-     <p>После покупки вы получаете личного технического специалиста, который будет отвечать на все ваши вопросы по работе програмы.</p>
-     <p>&nbsp;</p>
-     <p>На данный момент есть версии под Windows 7, 10, а также Mac OS и Unix.</p>
-     <p>&nbsp;</p>
-     <p>В течении двух суток вы можете полностью вернуть денежные средства, если програма не будет соответствовать заявленным возможностям.</p>
-     <p>&nbsp;</p>
-     <p>Если остались еще какие либо вопросы, то Вы можете обратиться в нашу <a class="nonblock" href="tg://resolve?domain=%20whatsap_support">тех. поддержку</a>.</p>
-     <p>&nbsp;</p>
-     <p>Покупка програмы производится автоматически через сайт или агента в телеграме <a class="nonblock" href="tg://resolve?domain=%20whatsap_support">@whatsap_support.</a></p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="u2000"><!-- group -->
-     <div class="clearfix grpelem" id="u1981-8"><!-- content -->
-      <p>И самое главное, цена всего <span id="u1981-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <span id="u1981-4">1 490</span> рублей</p>
-     </div>
-     <div class="clearfix grpelem" id="u1997"><!-- group -->
-      <div class="clearfix grpelem" id="u1991-4"><!-- content -->
-       <p><span id="u1991">8 000</span></p>
-      </div>
-      <div class="rounded-corners grpelem" id="u1994"><!-- simple frame --></div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u2006-6" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-     <p><a class="nonblock" href="tg://resolve?domain=%20whatsap_support">Обратиться в тех. поддержку </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WhatsApp Spam 2019</p>
-    </div>
-   </div>
-   <div class="verticalspacer" data-offset-top="5872" data-content-above-spacer="5871" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-   <div class="browser_width grpelem" id="u2003-bw">
-    <div id="u2003"><!-- simple frame --></div>
-   </div>
-  </div>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide whether to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
-k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","webpro","musewpslideshow","jquery.museoverlay","touchswipe"],function(c){var $ = c;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-Muse.Utils.resizeHeight('.popup_anchor.allow_click_through');/* resize height */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('#pamphletu3745', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'loose',event:'mouseover',deactivationEvent:'none',autoPlay:true,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,triggersOnTop:false,shuffle:false,enableSwipe:false,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:true}); });/* #pamphletu3745 */
-Muse.Utils.initWidget('#pamphletu2389', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'loose',event:'mouseover',deactivationEvent:'none',autoPlay:true,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:true,triggersOnTop:true,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:true}); });/* #pamphletu2389 */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
-</script>
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+
+	<div class="header">
+
+
+		<nav id="mainNav" class="navbar navbar-default affix-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" title=""><img src="Content/Landing/images/logo.png"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul id="menu-main" class="nav navbar-nav">
+						<li class="menu-item"><a class="menu-item float" href="#">Возможности</a></li>
+						<li class="menu-item"><a class="menu-item float" href="#">Как это работает</a></li>
+						<li class="menu-item"><a class="menu-item float" href="#">Эффективность</a></li>
+						<li class="menu-item"><a class="menu-item float" href="#">Отзывы</a></li>
+						<li class="menu-item"><a class="menu-item float" href="#">Вопросы</a></li>
+						<li class="menu-item lk">
+								<a href="pay.html" target="_blank">
+									<div class="button" style="margin-top: -14px; border: 1px solid #fff;">
+										Оплатить
+									</div>
+								</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="wrapper">
+			<div class="header-block">
+
+				<div class="title">
+					<h1 style="font-size: 24px;">Программа для рассылки сообщений <br>в WhatsApp</h1>
+				</div>
+				<div class="right-col">
+					<div class="video-bg">
+						<iframe src="https://www.youtube.com/embed/jlYCPaa9X5w" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div><!--/right-col-->
+
+				<div class="left-col">
+
+
+					<div class="pre-reg">
+						<div class="header-desc">
+							<div class="slider">
+								<ul>
+									<li>
+										<h1 style="font-size: 18px;">ЧТО ТАКОЕ WhatsApp Spam?</h1>
+										<p>
+											Отличный инструмент для продвижения и автоматизации действий в WhatsApp. Превосходя всех своих конкурентов, WhatsApp на сегодняшний день является самым мощным инструментом и на это конечно же есть причины. Программа смогла пробить все алгоритмы и ограничения, а так же показала превосходную конверсию.
+										</p>
+									</li>
+									<li>
+										<h1 style="font-size: 18px;">КОМУ НУЖНА ПРОГРАММА ?</h1>
+										<p>
+											В первую очередь, программу оценят пользователи, ведущие собственный бизнес. При помощи этой программы можно организовать отличную рекламную кампанию для своего бизнеса и поднять уровень продаж своих товаров или услуг.
+										</p>
+									</li>
+								</ul>
+							</div><!--/slider-->
+						</div><!--/header-desc-->
+
+						<div class="button-social" >
+							<a href="/whatsapp.zip" target="_blank"><div class="button" style="border: 1px solid #fff;">Скачать демоверсию</div></a>
+						</div><!--/button-social-->
+						<div class="button-social">
+							<a href="pay.html" target="_blank">
+								<div class="button" style="border: 1px solid #fff;">
+									Оплатить
+								</div>
+							</a>
+						</div><!--/button-social-->
+						<br clear="all">
+					</div><!--/pre-reg-->
+					
+				</div><!--/left-col-->
+			</div><!--/header-block-->
+
+		</div><!--/wrapper-->
+		<br clear="all"><br><br>
+	</div><!--/header-->
+
+	<div class="block-one b2" id="bl1">
+		<div class="wrapper">
+			<div style="text-align: center;
+						color: #000;
+						font-size: 35px;
+						margin: 0 auto;
+						margin-top: -30px;
+						margin-bottom: 50px;
+						font-weight: 700;
+						border: 2px solid #e20909;
+						padding: 20px;">Телефонная База 1.900.000 контактов с Whatsapp по всей России, Казахстану, Беларусии при покупке программы в ПОДАРОК! 
+Цена по АКЦИИ всего 1490₽/22$, ВМЕСТО 8000₽/120$! Акция ЗАКОНЧИТСЯ Сегодня в 00:00 по Москве! Спешите купить уникальный продукт! Аналагов НЕТ и НЕ БУДЕТ!</div>
+			<div class="heqder-block">Функции программы:</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph dir"></div>
+					<div class="text-header-bo">Рассылка сообщений</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Автоматическая отправка сообщений по указанным контактам. Так же есть возможность прикрепить изображение
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph sborandfiltr"></div>
+					<div class="text-header-bo">Чеккер контактов</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Проверка факта регистрации номера телефона в WhatsApp
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph autopost"></div>
+					<div class="text-header-bo">Мультимедиа</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Возможность прикрепить изображение к рассылаемым сообщениям
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph vzaim"></div>
+					<div class="text-header-bo">Автоматическая регистрация</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Вам не нужно регистрировать аккаунты вручную, за вас это сделает програма автоматически в неограниченных количествах
+				</div>
+				
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph comment"></div>
+					<div class="text-header-bo">Автоответчик</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Вы можете настроить автоответчик прямо в WhatsApp Spam. Вам больше не нужно авторизовываться с сотни аккаунтов, чтобы ответить на сообщение
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph copy1"></div>
+					<div class="text-header-bo">Высокая скорость</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Регистрация нового аккаунта занимает считаные секунды, аккаунт рассылает до 50-и сообщений в течении десяти секунд
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph auto"></div>
+					<div class="text-header-bo">Статистика использования</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Програма автоматически собирает статистику и показывает в режиме реального времени - сколько сообщений отправлено, сколько аккаунтов заблокировано
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph razdel"></div>
+					<div class="text-header-bo">Бесплатные прокси</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Вам не нужно покупать прокси, WhatsApp Spam автоматически запрашивает публичные сервера и проверяет на возможность использования в WhatsApp
+				</div>
+				<div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+			</div>
+			<div class="in-b item-block-one">
+				<div class="header-item-bo">
+					<div class="glyph telega"></div>
+					<div class="text-header-bo">Бесплатные обновления</div>
+				</div>
+				<div class="text-content-bo">
+					<div class="markg">Уже доступно</div> Купив програму один раз, вы на всю жизнь имеете доступ к автоматическим обновлениям
+				</div>
+			</div>
+			<br clear="all">
+			<h2 class="text-content-bo" style="text-align:center;font-size:18px">Купленная програма не имеет ограничений</h2>
+			<br clear="all">
+			<div class="dsc" style="
+				text-align: center;
+				color: #000;
+				font-size: 18px;
+				margin: 0 auto;
+				font-weight: 700;
+				margin-bottom: -60px;
+				border: 2px solid #e20909;
+				padding: 20px;">
+			ВАЖНО!<br> 
+			Купленная програма не имеет ограничений! 
+			Оплатить программу Вы можете любой банковской картой, yandex кошельком или мобильным телефоном!
+			После оплаты, Вы получите ссылку на скачивание программы для Whatsapp рассылки, базу на 1.900.000 номеров с Whatsapp по всей России, Казахстану, Беларусии и лицензионный ключ от программы, а так же API ключ от сервиса активации номеров для рассылки! Контакты ПЕРСОНАЛЬНОГО МЕНЕДЖЕРА! Дополнительных ВЛОЖЕНИЙ НЕТ! Все Обновления Абсолютно БЕСПЛАТНЫЕ!
+			</div>
+		</div>
+	</div>
+
+
+	<div class="block-one block-two b1" id="bl2">
+		<div class="wrapper" style="max-width: 1240px">
+			<div class="heqder-block">Как это работает?</div>
+			<div class="in-b item-block-best">
+				<div class="header-item-bt">
+					<img src="Content/Landing/images/r1.png" class="etapy-icon">
+					<div class="text-header-bt">
+						Этап #1
+					</div>
+				</div>
+				<div class="text-content-bt">
+					Приобретаете ключ активации на этом сайте. Скачиваете WhatsApp Spam, устанавливаете, указываете купленный ключ активации
+				</div>
+			</div>
+			<div class="in-b item-block-best">
+				<div class="header-item-bt">
+					<img src="Content/Landing/images/r2.png" class="etapy-icon">
+					<div class="text-header-bt">
+						Этап #2
+					</div>
+				</div>
+				<div class="text-content-bt">
+					Добавляете номера телефонов из своей базы и отсеиваете те, на которых не зарегистрирован WhatsApp
+				</div>
+			</div>
+			<div class="in-b item-block-best">
+				<div class="header-item-bt">
+					<img src="Content/Landing/images/r3.png" class="etapy-icon">
+					<div class="text-header-bt">
+						Этап #3
+					</div>
+				</div>
+				<div class="text-content-bt">
+					Указываете контакты в WhatsApp Spam, вводите сообщение, которое будет рассылаться
+				</div>
+			</div>
+			<div class="in-b item-block-best">
+				<div class="header-item-bt">
+					<img src="Content/Landing/images/r4.png" class="etapy-icon">
+					<div class="text-header-bt">
+						Результат
+					</div>
+				</div>
+				<div class="text-content-bt">
+					Нажимаете кнопку "Запустить" и следите за ростом продаж
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="block-one b4" id="bl4" style="padding-top: 80px;">
+
+		<div class="wrapper">
+			<div class="heqder-block bq4">Что говорят пользователи:</div>
+
+			<div class="slider-global-wrapper">
+				<div class="slider-global">
+					<div class="slider on-slider slide">
+						<div class="block-users">
+							<div class="user-job">Лиля Юсупова <br><h3 style="font-size:14px;">SMM-специалист</h3></div>
+
+							<div class="users-text">«Успела получить ключ активации за отзыв. Лично моё мнение, програма супер. Даже инстаграм не показал такой эффективности, а с ним я работаю уже несколько лет. В общем - огонь 🔥»</div>
+						</div>
+					</div>
+					<div class="slider slide">
+						<div class="block-users">
+							<div class="user-job">Виктор Морозов <br><h3 style="font-size:14px;">Арбитражник</h3></div>
+							<div class="users-text">«Занимаюсь арбитражем трафика уже долгое время. И я скажу вам, что при помощи WhatsApp Spam можно делать огромные продажи за гроши. Програма окупила себя за пол часа. Очень жаль, что автор не послушал меня и начал публичные продажи»</div>
+						</div>
+					</div>
+					<div class="slider slide">
+						<div class="block-users">
+							<div class="user-job">Владимир Авраменко <br><h3 style="font-size:14px;">Предприниматель</h3></div>
+
+							<div class="users-text">«Пользуюсь программой около двух месяцев, за это время я понял, что WhatsApp - отличная платформа для бизнеса. На данный момент я получаю из WhatsApp более 70% лидов (такси по г. Москва). Всем рекомендую 👍»</div>
+						</div>
+					</div>
+				</div>
+				<div class="navigation-users">
+					<div class="point act" data="1"></div>
+					<div class="point" data="2"></div>
+					<div class="point" data="3"></div>
+				</div>
+			</div><!--/slider-global-wrapper -->
+			<div class="right-col">
+				<div class="video-bg">
+					<iframe src="https://www.youtube.com/embed/_IQMrvzdGzU" frameborder="0" allowfullscreen></iframe>
+				</div>
+		</div><!--/right-col-->
+			<br clear="all">
+		</div>
+	</div><!--/block-one b4 -->
+
+
+
+
+
+
+	<div class="l-grid l-grid--container" id="bl3">
+	
+	<div id="i-features" class="ui-home-advantages">
+		<div class="l-grid l-grid--container">
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading bq3">Отправляйте сообщения правильным путем</div>
+					<div class="ui-home-advantage__text">Массовая рассылка сообщений обеспечивает отличный трафик. В WhatsApp очень высокий процент открытия сообщений, поэтому вся ваша целевая аудитория увидит ваше предложение.
+						<br><br>
+						Мы предлагаем настолько мощную рассылку сообщений, которую не предлагал еще никто. Успейте собрать все сливки вместе с нами.
+					</div>
+				</div>
+				<div class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset" >
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-1.png" alt=""></div>
+				</div>
+			</div>
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-2.png" alt=""></div>
+				</div>
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading">Рекламируетесь по целевой аудитории</div>
+					<div class="ui-home-advantage__text">
+						В WhatsApp огромная аудитория, практически каждый телефон установил себе приложение WhatsApp. Благодаря нашей програме вы можете сделать таргетированную рассылку по своей базе телефонов.
+						<br><br>
+						И не важно, будет это 100 сообщений или 10 000. Наша програма справится с любыми обьемами.
+					</div>
+				</div>
+			</div>
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading">Автоматизируйте вашу рассылку</div>
+					<div class="ui-home-advantage__text">
+						Вам не нужно регистрировать аккаунты вручную. Мы сделаем это за вас.
+						<br><br>
+						Подключите любой доступный сервис sms-активации и програма готова рассылать тонны сообщений.
+					</div>
+				</div>
+				<div data-wow-duration="1.5s" class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset">
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-3.png" alt=""></div>
+				</div>
+			</div>
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-4.png" alt=""></div>
+				</div>
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading">Самый эффективный трафик</div>
+					<div class="ui-home-advantage__text">
+						Себестоимость пятидесяти сообщений всего в 1 рубль.
+						<br><br>
+						10 000 отправленных сообщений обойдутся вам всего в 200 рублей.
+						<br><br>
+						Понимаете насколько это дешевый и эффективный трафик? 
+					</div>
+				</div>
+			</div>
+		</div>
+
+			
+		</div>
+	</div>
+
+	
+
+	
+	<div class="block-one b4" id="bl4" style="padding-top: 80px;text-align: center;">
+		<div class="heqder-block bq4">Скриншот програмы (версия 1.2)</div>
+		<img src="Content/Landing/images/scr.png" style="border: 1px solid #9f9898;filter: drop-shadow(-3px 3px 9px black);width: 90vw;height: auto;max-width: 1000px;">
+	</div>
+
+	<div class="block-one b4" style="text-align: center;">
+		<div class="heqder-block bq4">Новое в версии 1.3</div>
+
+		<div id="i-features" class="ui-home-advantages">
+			<div class="l-grid l-grid--container">
+
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/1.png" alt=""></div>
+				</div>
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading">Чеккер телефонных номеров</div>
+					<div class="ui-home-advantage__text">
+						Вы можете любой бесплатной програмой собрать в нужной группе ВК, ok.ru (или любой другой социальной сети) телефонные номера. 
+						<br><br>
+						И после этого, если они зарегистрированы в WhatsApp, то произвести рассылку личных сообщений.
+					</div>
+				</div>
+			</div>
+
+			<div class="l-row l-row--xs-middle ui-home-advantage">
+				<div class="l-col l-col--xs-12 l-col--md-6">
+					<div class="ui-home-advantage__heading bq3">7 сервисов СМС-активаций</div>
+					<div class="ui-home-advantage__text">Мы исключили такую проблему, как нехватка сим-карт в сервисах смс-активаций.
+						<br><br>
+						У вас теперь есть 7 сервисов, при помощи которых происходит автоматическая регистрация аккаунтов.
+					</div>
+				</div>
+				<div class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset" >
+					<div class="ui-home-advantage__image"><img src="Content/Landing/images/2.png" alt=""></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+		
+	</div>
+
+	<div class="block-one b4" id='bl6'>
+		<div class="heqder-block bq4" style="text-align: center;">Если остались вопросы</div>
+		<div class="l-grid--container dsc">
+			<ul>
+				<li>Покупая ключ активации вы получаете доступ к програме навсегда.</li>
+				<li>Все последующие обновления абсолютно бесплатны. Вам нужно лишь один раз нажать "Проверить обновления".</li>
+				<li>Поддержка прокси будет в следующем обновлении. На данный момент вы без проблем можете использовать публичные (они так же загружаются в програму одним нажатием кнопки).</li>
+				<li>После покупки вы получаете личного технического специалиста, который будет отвечать на все ваши вопросы по работе програмы.</li>
+				<li>На данный момент есть версии под Windows 7, 10, а также Mac OS и Unix.</li>
+				<li>В течении двух суток вы можете полностью вернуть денежные средства, если програма не будет соответствовать заявленным возможностям.</li>
+				<li>Если остались еще какие либо вопросы, то Вы можете обратиться в нашу <a href="https://tele.click/whatsap_support" style="color: #0000FF">тех. поддержку</a>.</li>
+				<li>Покупка програмы производится автоматически через сайт или агента в телеграме <a href="https://tele.click/whatsap_support" style="color: #0000FF">@whatsapp_support</a>.</li>
+			</ul>
+		</div>
+
+		<div class="l-grid--container dsc" style="text-align: center;font-size: 25px;margin-top: 50px;">
+			И самое главное, цена всего <span style="
+	text-decoration: line-through;
+	color:  red;
+	font-size:  21px;
+	font-weight:  bold;
+">8 000</span> <span style="font-weight: bold;text-decoration: underline;color: #1b2efe;">1490</span> рублей
+		</div>
+	</div>
+	
+	<div class="block-one block-pre-footer b5" id="bl5">
+		<div class="wrapper">
+			<div class="copy"><a href="https://tele.click/whatsap_support">Обратиться в тех. поддержку</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WhatsApp Spam 2019</div>
+		</div>
+	</div>
+	<a href="#" class="scrollup" style="left: 35px;">Наверх</a>
+
+	<a href="https://tele.click/whatsap_support"><img src="./Content/manag.png" alt="" class="round" width="80" height="80"></a>
+
+</body>
 </html>

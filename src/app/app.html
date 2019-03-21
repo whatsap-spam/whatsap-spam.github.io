@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>WhatsApp Spam 1.3</title>
+	<link rel="stylesheet" type="text/css" href="lib/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css"> </head>
+
+<body>
+	<div class="ui fixed menu" id="menu-top">
+		<div class="ui container"> 
+		
+			<a href="#" id="q" class="active item">Рассылка сообщений</a>
+			<a href="#" id="hsd" class="disabled item">Автоответчик</a>
+			<a href="#" id="" class="disabled item">Чеккер <span class="ui mini red label">NEW</span></a>
+
+			<div class="right menu">
+				<div class="ui form borderless item">
+					<button id="upd" class="ui icon blue button" style="margin-right: 10px;"> Проверить обновления</button>
+					<button id="activ" class="ui right labeled icon green button"><i class="checkmark icon"></i> Програма активирована </button>
+					<button id="activno" class="ui right labeled icon red button"><i class="warning circle icon"></i> Необходима активация </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="maincontent" class="ui main">
+		<div class="ui stackable grid" id="win2" style="display: none;">
+			<div class=" wide column">
+				<div id="regInnkommende" class="ui stacked segment"> <a class="ui olive ribbon label">Чеккер номеров телефонов</a>
+					<div class="ui form">
+							<div class="ui form">
+								<div class="field">
+									<div class="ui input">
+										<textarea rows="5" placeholder="Номера телефонов (каждый на новой строке)"></textarea>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="field">
+								<label>Фильтр</label>
+								<div id="r" class="ui fluid search selection dropdown">
+									<input type="hidden" name="country"> <i class="dropdown icon"></i>
+									<div class="default text">Фильтрация</div>
+									<div class="menu">
+										<div class="item" data-value="1"></i>Без фильтра</div>
+										<div class="item" data-value="2"></i>Только тех, кто проявил активность</div>
+									</div>
+								</div>
+							</div>
+						<div id="parse_start" class="ui primary button" tabindex="0" id='parse_start'>Проверить</div>
+					</div>
+				</div>
+
+
+
+				<div class="ui stacked segment"> <a class="ui ribbon red label">Результат</a> 
+					<div class="ui form">
+						<div class="field">
+							<div class="log2"></div>
+						</div>
+						<div class="field">
+							<div class="ui labeled button" tabindex="0">
+								  <div class="ui red button" id="copy-buf">
+								    	<i class="heart icon"></i> Скопировать
+								  </div>
+								  <a class="ui basic red left pointing label" id='users_number'>
+								   	 0
+								  </a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<div class="ui stackable grid" id="win1" >
+			<div class="nine wide column">
+				<div id="regInnkommende" class="ui stacked segment"> <a class="ui olive ribbon label">Регистрация аккаунтов</a>
+					<div class="ui form">
+						<div class="two fields">
+							<div class="field">
+								<label>Ключ доступа</label>
+								<div id="e" class="ui right labeled input">
+									<input type="text" placeholder="Ключ доступа">
+									<div class="ui basic label"> API-KEY </div>
+								</div>
+							</div>
+							<div class="field">
+								<label>Сервис</label>
+								<div id="r" class="ui fluid search selection dropdown">
+									<input type="hidden" name="country"> <i class="dropdown icon"></i>
+									<div class="default text">Выберите сервис</div>
+									<div class="menu">
+										<div class="item" data-value="1"></i>sim-sms.org</div>
+										<div class="item" data-value="2"></i>sms-activate.ru</div>
+										<div class="item" data-value="3"></i>sms-acktiwator.ru</div>
+										<div class="item" data-value="4"></i>virtualsms.ru</div>
+										<div class="item" data-value="5"></i>give-sms.com</div>
+										<div class="item" data-value="6"></i>sms-reg.com</div>
+										<div class="item" data-value="7"></i>smslike.ru</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui checkbox datepicker">
+								<input type="checkbox" tabindex="0" class="hidden" checked>
+								<label>Регистрировать в процессе</label>
+							</div>
+						</div>
+						<div class="ui secondary segment datepicker dont-show small form">
+							<div class="field">
+								<label>Количество</label>
+								<div class="fields">
+									<div class="three wide field">
+										<div class="ui input"><input type="text" value="50" placeholder="Количество"> </div>
+									</div>
+									<div class="six wide field">
+										<select class="ui fluid search dropdown" name="inn_dato[maaned]">
+											<option value="1">С задержкой</option>
+											<option value="2">Без задержки</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ui primary button" tabindex="0" id='smsconnect'>Подключиться</div>
+						<div class="ui button disabled" tabindex="0" id='smsbalance'>Проверить баланс</div>
+					</div>
+				</div>
+
+				<div class="ui hidden divider"></div>
+
+				<div id="regUtgaende" class="ui stacked segment"> <a class="ui ribbon orange label">Сообщение</a> 
+					<div class="ui form">
+						<div class="two fields">
+							<div class="field">
+								<label>Текст сообщения</label>
+								<div class="ui right input">
+									<input type="text" placeholder="Текст сообщения для рассылки" id='linkmsg'>
+								</div>
+							</div>
+
+							<div class="field">
+								<label>Прикрепить изображение</label>
+								<div class="ui right input">
+									<div class="ui action input disabled">
+								      <input type="text" class="disabled" placeholder="Не выбрано">
+								      <button class="ui disabled button">Выбрать</button>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="ui hidden divider"></div>
+
+				<div id="regUtgaende" class="ui stacked segment"> <a class="ui ribbon green label">Получатели</a> 
+					<div class="ui form">
+						<div class="field">
+							<label>Пользователи</label>
+							<div class="ui input">
+								<textarea rows="2" placeholder="Номера телефонов (каждый на новой строке)" id='usernames'></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="seven wide column">
+				
+				<table class="ui small very compact unstackable selectable olive table">
+					<thead>
+						<tr>
+							<th colspan="2">Статистика</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Баланс СМС-сервиса</td>
+							<td class="right aligned" id='trbalance'>?</td>
+						</tr>
+						<tr>
+							<td>Доступно СМС для регистрации</td>
+							<td class="right aligned" id='trsmscount'>?</td>
+						</tr>
+						<tr>
+							<td>Зарегистрировано аккаунтов</td>
+							<td class="right aligned" id='trregistred'>0</td>
+						</tr>
+						<tr>
+							<td>Отправлено сообщений</td>
+							<td class="right aligned" id='trsended'>0</td>
+						</tr>
+						<tr>
+							<td>Получатели не зарегистрированы в WhatsApp</td>
+							<td class="right aligned" id='trsendedw'>0</td>
+						</tr>
+					</tbody>
+				</table>
+
+				
+				<div class="ui stacked segment"> <a class="ui ribbon red label">Лог</a> 
+					<div class="ui form">
+						<div class="log"></div>
+					</div>
+				</div>
+			
+				<div class="ui container center aligned" style="padding-top: 10px;">
+					<div class="ui buttons">
+					  <button id="stop" class="ui button massive">Остановить</button>
+					  <div class="or" data-text="или" style="font-size: 1.5rem; height: unset;"></div>
+					  <button class="ui positive button massive" id="start">Запустить</button>
+					</div>
+				</div>
+
+
+			</div>
+			
+
+		</div>
+	</div>
+
+
+	<div id="mod" class="ui small basic test modal transition">
+	    <div class="ui icon header">
+	      <i class="announcement icon"></i>
+	      Активация
+	    </div>
+	    <div class="content">
+	      <p style="text-align: center;">Перед использованием програмы вам необходимо ввести ключ активации.</p>
+	    </div>
+	    <div class="actions">
+	      <div class="ui red basic cancel inverted button">
+	        <i class="unlock icon"></i>
+	        Ввести ключ
+	      </div>
+	      <div class="ui green ok inverted button">
+	        <i class="thumbs up icon"></i>
+	        Понятно
+	      </div>
+	    </div>
+  	</div>
+
+	
+	<div id="mod2" class="ui small basic test modal transition">
+	    <div class="ui icon header">
+	      <i class="announcement icon"></i>
+	      Активация
+	    </div>
+	    <div class="content">
+	      <div class="ui input" style="display: block;text-align: center;">
+	      	<input id="key" style="width: 50%;" placeholder="Ключ" type="text">
+    	  </div>
+
+	    </div>
+	    <div class="actions" style="text-align: center;">
+	      <div class="ui green ok inverted button">
+	        <i class="thumbs up icon"></i>
+	        OK
+	      </div>
+	    </div>
+  	</div>
+
+	<div id="mod3" class="ui small basic test modal transition">
+	    <div class="ui icon header">
+	      <i class="warning sign icon"></i>
+	      Активация
+	    </div>
+	    <div class="content">
+	      <p style="text-align: center;">Вы ввели неверный ключ. Попробуйте снова</p>
+	    </div>
+	    <div class="actions" style="text-align: center;">
+	      <div class="ui green ok inverted button">
+	        <i class="thumbs up icon"></i>
+	        OK
+	      </div>
+	    </div>
+  	</div>
+	
+	<div id="mod4" class="ui small basic test modal transition">
+	    <div class="ui icon header">
+	      <i class="child icon"></i>
+	      Програма активирована
+	    </div>
+	    <div class="content">
+	      <p style="text-align: center;">Спасибо за покупку нашего продукты! Не забывайте проверять обновления, мы постоянно развиваемся.</p>
+	    </div>
+	    <div class="actions" style="text-align: center;">
+	      <div class="ui green ok inverted button">
+	        <i class="thumbs up icon"></i>
+	        OK
+	      </div>
+	    </div>
+  	</div>
+
+
+
+
+
+
+	<script>
+		window.$ = window.jQuery = require('jquery');
+	</script>
+
+	<script src="lib/semantic.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

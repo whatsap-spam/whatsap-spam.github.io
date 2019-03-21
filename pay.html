@@ -1,137 +1,151 @@
 <!DOCTYPE html>
-<html class="nojs html css_verticalspacer" lang="ru-RU">
- <head>
+<!-- saved from url=(0020)https://crymore.biz/ -->
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" type="image/png" sizes="32x32" href="Content/Landing/images/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Content/Landing/images/fav.png">
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2018.1.0.386"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <script type="text/javascript">
-   // Redirect to phone/tablet as necessary
-(function(c,b,d){var a=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var d=a[b]+"MaxTouchPoints";if(d in navigator&&navigator[d])return!0}try{return document.createEvent("TouchEvent"),!0}catch(f){}return!1}(),f=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var d=b[c];d.charAt(0)==" ";)d=d.substring(1,d.length);if(d.indexOf(a)==
-0)return d.substring(a.length,d.length)}return null};if(f("inbrowserediting")!="true"){var h,f=f("devicelock");f=="phone"&&d?h=d:f=="tablet"&&b&&(h=b);if(f!=c&&!h)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&d?h=d:window.matchMedia("(max-device-width: 960px)").matches&&b&&a&&(h=b);else{var c=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),f=window.screen.systemXDPI||0,g=window.screen.systemYDPI||0,f=f>0&&g>0?Math.min(screen.width/f,screen.height/g):
-0;(c<=370||f!=0&&f<=3)&&d?h=d:c<=960&&b&&a&&(h=b)}if(h)document.location=h+(document.location.search||"")+(document.location.hash||""),document.write('<style type="text/css">body {visibility:hidden}</style>')}})("desktop","tablet/pay.html","phone/pay.html");
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-// Update the 'nojs'/'js' class on the html node
-document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+	<link href="Content/Landing/style.css" rel="stylesheet">
+	<link href="Content/Landing/responsive.css" rel="stylesheet">
 
-// Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "pay.css"], "outOfDate":[]};
+	<link rel="stylesheet" media="all" href="./src/style.css">
+
+	<script type="text/javascript" async src="./src/analytics.js"></script>
+	<script async src="./src/tag.js"></script>
+	<script type="text/javascript" async src="./src/watch.js"></script>
+	<script async src="./src/analytics.js"></script>
+	<script src="./src/jquery.min.js"></script>
+	<link rel="stylesheet" href="./src/jquery-ui.css">
+	<script src="./src/jquery-ui.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip({ html:true }); 
+		});
+		var shop_currency = 'rub';
+	</script>
+
+	<script>
+		var shopMessages = {
+			0: "Такого кол-ва товара нет",
+			1: "Вы уверены, что хотите прервать процесс покупки?",
+			2: "Укажите Email адрес",
+			3: "Мин. кол-во товара",
+			4: "Такого количества товара нет",
+			5: "Выберите способ оплаты",
+			6: "Оплата еще не дошла до нас, попробуйте еще раз. <br>Или свяжитесь с нашим агентом в Telegram!",
+		};
+	</script>
+	<script src="./src/shop.new.js"></script>
+</head>
+
+<body style="background: #6f38ab; margin: 0 auto;">
+	<div class="choose_popup" style="display: block;">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand page-scroll" title=""><img src="Content/Landing/images/logo.png"></a>
+				</div>
+			</div>
+		<div class="popup-modal">
+			<div class="title">Оплата</div>
+			<form action="https://crymore.biz/pay/" method="post" id="pay">
+					<input type="hidden" name="csrf_token" value="ec9e25a0010e9c7e316f78e89cb071ef">
+					<input type="hidden" name="order" value="12969889">
+					<input type="hidden" name="secret" value="fc3801018d9868be">
+					<table class="table table-striped table-bordered table-hover">
+						<tbody>
+							<tr>
+								<td>Товар</td>
+								<td class="title">WhatsApp Spam</td>
+							</tr>
+							<tr>
+								<td>Кол-во</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>К оплате</td>
+								<td>
+									1490 руб
+								</td>
+							</tr>
+							<tr>
+								<td>Оплата на карту Сбербанка</td>
+								<td>
+								  5469 3800 6581 6216
+								</td>
+							</tr>
+							<tr>
+								<td>Примечание</td>
+								<td><script type="text/javascript">document.write(Math.floor(Math.random() * 100000));</script></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="attention">
+									Внимание! Очень важно чтобы вы переводили деньги с этим примечанием, иначе средства не будут зачислены автоматически.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="check_pay">
+						<tbody>
+							<tr>
+								<td style="width: 250px;" class="check">Ждем оплаты..</td>
+								<td style="text-align: right;">
+									<input type="submit" class="btn btn-default btn-primary" value="Проверить оплату">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			<a href="https://tele.click/whatsap_support" target="_blank" style="color: #fff">
+				<div class="button" style="border: 1px solid #fff; margin: 50px">
+					Обратиться к оператору Telegram
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+<script src="./src/bootstrap.min.js"></script>
+
+<style type="text/css">
+body {
+background: #000 url(/static/images/templates/alyssum/bg.jpg) no-repeat center top
+}
+</style>
+<script type="text/javascript">
+//seo fix
+if ( document.domain.substring(0,4) == 'www.' ) {
+window.location = document.URL.replace("//www.", "//"); 
+}
+
+$('#navbar ul li:first-child a').text('Продажа аккаунтов ВК');
 </script>
-  
-  <link media="only screen and (max-width: 370px)" rel="alternate" href="http://q.u/phone/pay.html"/>
-  <link media="only screen and (max-width: 960px)" rel="alternate" href="http://q.u/tablet/pay.html"/>
-  <title>pay</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/pay.css?crc=3883295191" id="pagesheet"/>
-   </head>
- <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="browser_width colelem" id="u4334-bw">
-    <div id="u4334"><!-- group -->
-     <div class="clearfix" id="u4334_align_to_page">
-      <div class="clip_frame grpelem" id="u4000"><!-- image -->
-       <img class="block" id="u4000_img" src="images/logo2.png?crc=488995775" alt="" data-heightwidthratio="0.25396825396825395" data-image-width="315" data-image-height="80"/>
-      </div>
-      <div class="clearfix grpelem" id="pu4383"><!-- column -->
-       <div class="rounded-corners clearfix colelem" id="u4383"><!-- column -->
-        <div class="clearfix colelem" id="pu4384-5"><!-- group -->
-         <div class="clearfix grpelem" id="u4384-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>Товар</p>
-         </div>
-         <div class="clearfix grpelem" id="u4388-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHATSAPP SPAM</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4385-5"><!-- group -->
-         <div class="clearfix grpelem" id="u4385-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>Кол-во</p>
-         </div>
-         <div class="clearfix grpelem" id="u4389-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4382-5"><!-- group -->
-         <div class="clearfix grpelem" id="u4382-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>К оплате</p>
-         </div>
-         <div class="clearfix grpelem" id="u4390-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1490 руб</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4386-5"><!-- group -->
-         <div class="clearfix grpelem" id="u4386-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>Оплата на карту&nbsp;&nbsp;&nbsp;&nbsp; Сбербанка</p>
-         </div>
-         <div class="clearfix grpelem" id="u4391-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5469 3800 6581 6216</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4387-5"><!-- group -->
-         <div class="clearfix grpelem" id="u4387-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>Примечание</p>
-         </div>
-         <div class="clearfix grpelem" id="u4392-4"><!-- content -->
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-         </div>
-         <div class="clearfix grpelem" id="u4393-4"><!-- content -->
-          <p>Внимание! Очень важно чтобы вы переводили деньги с этим примечанием, иначе средства не будут зачислены автоматически.</p>
-         </div>
-         <div class="grpelem" id="u6787"><!-- custom html -->
-          <td><script type="text/javascript">document.write(Math.floor(Math.random() * 100000));</script></td>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4396-4"><!-- group -->
-         <div class="clearfix grpelem" id="u4396-4"><!-- content -->
-          <p>Ждем оплаты..</p>
-         </div>
-         <a class="nonblock nontext Button rounded-corners clearfix grpelem" id="buttonu4394" href="p%d0%b0y.html" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="clearfix grpelem" id="u4395-4"><!-- content --><p><span id="u4395">Проверить оплату</span></p></div></a>
-        </div>
-       </div>
-       <a class="nonblock nontext Button rounded-corners clearfix colelem" id="buttonu7182" href="tg://resolve?domain=%20whatsap_support" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="clearfix grpelem" id="u7183-4"><!-- content --><p>ОБРАТИТЬСЯ К ОПЕРАТОРУ TELEGRAM</p></div></a>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="verticalspacer" data-offset-top="800" data-content-above-spacer="800" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-  </div>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide whether to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
-k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(c){var $ = c;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
+<script type="text/javascript">
+$( document ).ready(function() {
+// start pay
+$('button.btn-success').click(function () {
+ga('seoTracker.send', 'event', 'button', 'click', 'payment');
+ym(52544662, 'reachGoal', 'payment1');
+});
+// pay
+$('.popup-modal').on('click', 'input[type="submit"][value="Перейти к оплате"]', function () {
+ga('seoTracker.send', 'event', 'button', 'click', 'payment2');
+ym(52544662, 'reachGoal', 'payment2')
+});
+// check
+$('.popup-modal').on('click', 'input[type="submit"][value="Проверить оплату"]', function () {
+ga('seoTracker.send', 'event', 'button', 'click', 'check');
+ym(52544662, 'reachGoal', 'check')
+});
+});
 </script>
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+
+</body>
 </html>
